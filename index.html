@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="notes.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+<body style="background-color:#83a4c5;">
+  <div class="navbar">  
+    <h1>Hey!! Welcome To WebNotes....</h1>
+  </div>
+  <div class="notesApp">
+
+
+      <div class="addNote">
+        <h3>ADD YOUR NOTE!</h3>
+        <button class="addNotebtn btn btn-dark">+</button>
+      </div>
+
+    <div class="noteWindow hideUI">
+      <button type="button" class="closeBtn btn-close" aria-label="Close"></button>
+     <h4>Write Your Note</h4>
+      <div class="inputs">
+        <h6>Title</h6>
+        <input type="text" value="">
+      </div>
+      <div class="inputs">
+        <h6>Description</h6>
+        <textarea rows="5px" id="Description" cols="30"></textarea>
+      </div>
+      <div class="styleOption btn-group" role="group" aria-label="Basic checkbox toggle button group">
+        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck1">Underline</label>
+      
+        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck2">Bold</label>
+      
+        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck3">Italic</label>
+      </div>
+      <button class="addButton  btn btn-primary" id="addBtn">ADD</button>
+      <div class="alert alert-warning hideUI" role="alert">
+       Input Title or Description!!
+      </div> 
+    </div>
+
+    <div class="yourNote deleteDiv">
+      <h6>Title</h6>
+      <p>Writing Description</p>
+      <button class="deleteBtn">
+        <i class="bi bi-trash deleteBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+          </svg>
+        </i>
+      Delete</button>
+    </div>
+
+    <footer>Made With <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+    </svg> By Saksham</footer>
+  </div>
+
+  <script src="notes.js"></script>
+</body>
+</html>

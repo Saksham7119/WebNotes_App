@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font: sans-serif;
+}
+
+.notesApp{
+    display: flex;
+    gap: 20px; /* Adjust the gap as needed */
+    justify-content:flex-start; /* This distributes space evenly */
+    padding: 20px;    
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.addNote,
+.noteWindow,
+.yourNote {
+    flex: 1 1 calc(25% - 20px); /* Each item takes up 25% of the row width minus the gap */
+    max-width: calc(25% - 20px); /* This limits each item to a quarter of the row */
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 65px;
+    width: 100%;
+    background-color: #2E3A59;
+    color: #ffffff;
+}
+.navbar h1{
+    margin:auto;
+}
+.blurBackground {
+    filter: blur(5px);
+}
+
+.addNote{
+    margin: 10px;
+    padding: 2px;
+    height: 120px;
+    /* width: 200px; */
+    background-color: #FFF8E1;
+    color: Coral (#FF6B6B);
+    border-radius: 5px;
+    min-width: 200px;
+    max-width: fit-content;
+    max-width: fit-content;
+}
+
+.addNote h3{
+    margin: 15px;
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.addNote .btn{
+    color: white;
+    font-weight: bold;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+.addNote .btn:hover{
+    border: 1px solid white;
+    color: red;
+}
+
+.hideUI{
+    display: none;
+}
+
+.noteWindow{
+    width: 300px;
+    padding: 11px;
+    border-radius: 3px;
+    background-color: white;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    top: 5%;
+    transform: translate(-50%,40%);
+    box-shadow:0px 0px;
+}
+.noteWindow .addButton{
+    background-color: rgba(0, 0, 255, 0.559);
+    border-color: rgba(11, 11, 16, 0.493);
+    border-radius: 10px;
+    width: 95%;
+    margin:8px 0px 5px 5px;
+}
+.noteWindow .addButton:hover{
+    box-shadow: 2px 2px 5px black;
+    background-color: rgba(0, 0, 255, 0.523);
+}
+.closeBtn{
+    color: red;
+}
+.noteWindow h4{
+    text-decoration: underline;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+.noteWindow input{
+    width: 90px;
+    height: 12px;
+    padding: 11px;
+    border: 1px solid black;
+    font-size: 20px;
+    border-radius: 3px;
+
+}
+.noteWindow h6{
+    margin-bottom: 5px
+    
+}
+.alert{
+    margin: 10px 0px ;
+}
+.styleOption{
+    min-width: 50px;
+    height: 30px;
+    width:50px;
+}
+
+textarea{
+    padding: 5px;
+    width: 94%;
+    font-size: 18px;
+    margin: 5px; 
+}
+
+
+.yourNote{
+    max-width:fit-content;
+    max-height: fit-content;
+    min-height:120px;;
+    min-width: 200px;
+    background-color: rgb(169, 252, 86);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    word-wrap:break-word;
+}
+.yourNote button{
+    background:transparent;
+    border: 1.6px solid red;
+    color: red;
+    padding: 0px 2px 0px 2px;
+    margin-left: 60%;  
+    margin-bottom: 5px; 
+}
+.yourNote button:hover{
+    border: 1.6px solid black;
+    color: black;
+}
+
+footer {
+    text-align: center; /* Centers the text */
+    padding: 10px; /* Adds some space around the text */
+    background-color: #1a7cd361; /* Optional: sets a background color */
+    position: fixed; /* Sticks the footer to the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+}
