@@ -1,7 +1,10 @@
 *{
     margin: 0px;
     padding: 0px;
-    font: sans-serif;
+}
+body{
+    font-family: "Arial", sans-serif;
+    color: #2b2f33; /* Cool dark gray */
 }
 
 .notesApp{
@@ -24,7 +27,7 @@
 .navbar{
     height: 65px;
     width: 100%;
-    background-color: #2E3A59;
+    background-color: #5f68a0;
     color: #ffffff;
 }
 .navbar h1{
@@ -39,14 +42,13 @@
     padding: 2px;
     height: 120px;
     /* width: 200px; */
-    background-color: #FFF8E1;
+    background-color: #aec6cf;
     color: Coral (#FF6B6B);
     border-radius: 5px;
     min-width: 200px;
     max-width: fit-content;
     max-width: fit-content;
 }
-
 .addNote h3{
     margin: 15px;
     text-decoration: underline;
@@ -57,8 +59,14 @@
 .addNote .btn{
     color: white;
     font-weight: bold;
-    margin-left: 80px;
+    margin-left: 95px;
     margin-bottom: 10px;
+    background-color: #394c56; /* Cool grayish blue */
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .addNote .btn:hover{
     border: 1px solid white;
@@ -73,16 +81,16 @@
     width: 300px;
     padding: 11px;
     border-radius: 3px;
-    background-color: white;
+    background-color:#cecece;
     position: fixed;
     left: 50%;
     right: 50%;
-    top: 5%;
+    top: 0%;
     transform: translate(-50%,40%);
     box-shadow:0px 0px;
 }
 .noteWindow .addButton{
-    background-color: rgba(0, 0, 255, 0.559);
+    background-color: rgba(40, 40, 40, 0.998);
     border-color: rgba(11, 11, 16, 0.493);
     border-radius: 10px;
     width: 95%;
@@ -108,6 +116,7 @@
     border: 1px solid black;
     font-size: 20px;
     border-radius: 3px;
+    background-color: #e0f7fa;
 
 }
 .noteWindow h6{
@@ -128,6 +137,7 @@ textarea{
     width: 94%;
     font-size: 18px;
     margin: 5px; 
+    background-color: #e0f7fa;
 }
 
 
@@ -136,7 +146,7 @@ textarea{
     max-height: fit-content;
     min-height:120px;;
     min-width: 200px;
-    background-color: rgb(169, 252, 86);
+    background-color: #78c4be;
     border-radius: 5px;
     margin: 10px;
     padding: 5px;
@@ -158,11 +168,42 @@ textarea{
 footer {
     text-align: center; /* Centers the text */
     padding: 10px; /* Adds some space around the text */
-    background-color: #1a7cd361; /* Optional: sets a background color */
+    background-color: #5a457fa5; /* Optional: sets a background color */
     position: fixed; /* Sticks the footer to the bottom */
     left: 0;
     bottom: 0;
     width: 100%;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 15px;
+}
+/*---------------------------------------------------------------*/
+@media only screen and (max-width :600px) {
+    .navbar h1{
+        font-size: 25px;
+    }
+
+    .addNote{
+       margin: auto; 
+    }
+
+    .addNote .btn{
+        margin-left: 95px;
+    }
+
+    .noteWindow{
+            width: 80%; /* Adjust to a more responsive width */
+            max-width: 100%; /* Ensure it does not exceed screen width */
+            margin: 10% auto; /* Center the note window */
+    }
+    .noteWindow h4{
+        font-size: 30px;
+        text-decoration: underline;
+        margin-left: 15%;
+        margin-bottom: 10px;
+     
+    }
+
+    .yourNote{
+        margin: auto;
+    }
 }
