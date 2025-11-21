@@ -4,13 +4,13 @@
 }
 body{
     font-family: "Arial", sans-serif;
-    color: #2b2f33; /* Cool dark gray */
+    color: #2b2f33;
 }
 
 .notesApp{
     display: flex;
-    gap: 20px; /* Adjust the gap as needed */
-    justify-content:flex-start; /* This distributes space evenly */
+    gap: 20px;
+    justify-content:flex-start;
     padding: 20px;    
     flex-wrap: wrap;
     width: 100%;
@@ -19,8 +19,8 @@ body{
 .addNote,
 .noteWindow,
 .yourNote {
-    flex: 1 1 calc(25% - 20px); /* Each item takes up 25% of the row width minus the gap */
-    max-width: calc(25% - 20px); /* This limits each item to a quarter of the row */
+    flex: 1 1 calc(25% - 20px); 
+    max-width: calc(25% - 20px); 
     box-sizing: border-box;
 }
 
@@ -41,7 +41,6 @@ body{
     margin: 10px;
     padding: 2px;
     height: 120px;
-    /* width: 200px; */
     background-color: #aec6cf;
     color: Coral (#FF6B6B);
     border-radius: 5px;
@@ -61,7 +60,7 @@ body{
     font-weight: bold;
     margin-left: 95px;
     margin-bottom: 10px;
-    background-color: #394c56; /* Cool grayish blue */
+    background-color: #394c56;
     color: #ffffff;
     border: none;
     padding: 8px 12px;
@@ -166,10 +165,10 @@ textarea{
 }
 
 footer {
-    text-align: center; /* Centers the text */
-    padding: 10px; /* Adds some space around the text */
-    background-color: #5a457fa5; /* Optional: sets a background color */
-    position: fixed; /* Sticks the footer to the bottom */
+    text-align: center; 
+    padding: 10px; 
+    background-color: #5a457fa5; 
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -191,9 +190,9 @@ footer {
     }
 
     .noteWindow{
-            width: 80%; /* Adjust to a more responsive width */
-            max-width: 100%; /* Ensure it does not exceed screen width */
-            margin: 10% auto; /* Center the note window */
+            width: 80%; 
+            max-width: 100%; 
+            margin: 10% auto; 
     }
     .noteWindow h4{
         font-size: 30px;
@@ -207,3 +206,4 @@ footer {
         margin: auto;
     }
 }
+
