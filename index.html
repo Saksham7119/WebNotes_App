@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>📝 WebNotes - Your Digital Notepad</h1>
+    </div>
+
+    <div class="container">
+        <div class="notes-grid" id="notesGrid">
+            <div class="add-note-card" onclick="openModal()">
+                <h3>Create New Note</h3>
+                <button class="add-btn">+</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="noteModal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <h4>Write Your Note</h4>
+            
+            <div class="alert" id="alert">Please fill in both title and description!</div>
+            
+            <div class="input-group">
+                <label>Title</label>
+                <input type="text" id="noteTitle" placeholder="Enter note title...">
+            </div>
+            
+            <div class="input-group">
+                <label>Description</label>
+                <textarea id="noteDescription" placeholder="Write your note here..."></textarea>
+            </div>
+            
+            <div class="style-options">
+                <button class="style-btn" id="underlineBtn" onclick="toggleStyle('underline')">Underline</button>
+                <button class="style-btn" id="boldBtn" onclick="toggleStyle('bold')">Bold</button>
+                <button class="style-btn" id="italicBtn" onclick="toggleStyle('italic')">Italic</button>
+            </div>
+            
+            <button class="submit-btn" onclick="addNote()">Add Note</button>
+        </div>
+    </div>
+
+    <footer>
+        Made by Saksham
+    </footer>
+
+    <script script src="notes.js"></script>
+</body>
+</html>
